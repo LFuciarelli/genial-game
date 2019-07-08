@@ -4,10 +4,31 @@ from random import randint
 from time import sleep
 
 
-def sequence():
+def numbers():
+    randnum = randint(1, 4)
     while randnum == lights[-1]:
         randnum = (randint(1, 4))
     lights.append(randnum)
+
+
+def sequence():
+    for num in lights:
+        if num == 1:
+            red_led.on()
+            sleep(1)
+            red_led.off()
+        if num == 2:
+            blue_led.on()
+            sleep(1)
+            blue_led.off()
+        if num == 3:
+            green_led.on()
+            sleep(1)
+            green_led.off()
+        if num == 4:
+            yellow_led.on()
+            sleep(1)
+            yellow_led.off()
 
 
 def gameloop():
@@ -15,23 +36,7 @@ def gameloop():
     while True:
         sleep(2)
         gamer = [0]
-        for num in lights:
-            if num == 1:
-                red_led.on()
-                sleep(1)
-                red_led.off()
-            if num == 2:
-                blue_led.on()
-                sleep(1)
-                blue_led.off()
-            if num == 3:
-                green_led.on()
-                sleep(1)
-                green_led.off()
-            if num == 4:
-                yellow_led.on()
-                sleep(1)
-                yellow_led.off()
+        sequence()
         while True:
             if red_button.is_pressed:
                 red_led.on()
@@ -72,7 +77,7 @@ def gameloop():
             blue_led.off()
             green_led.off()
             yellow_led.off()
-            sequence()
+            numbers()
         else:
             red_led.pulse()
             print('SORRY, WRONG SEQUENCE!')
@@ -89,7 +94,7 @@ def destroy():
 
 
 # Main program
-if __name__ == 'main':
+while True:
     red_led = PWMLED(23)
     blue_led = PWMLED(25)
     green_led = PWMLED(17)
@@ -101,11 +106,11 @@ if __name__ == 'main':
     halt_button = Button(26, pull_up=True)
     level = 1
     lights = [0]
-    randnum = 0
     print('Level 1!')
     try:
-        sequence()
+        numbers()
         gameloop()
     except KeyboardInterrupt:
         print('THANK YOU FOR PLAYING GENIAL!')
         destroy()
+        break
