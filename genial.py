@@ -5,7 +5,7 @@ from time import sleep
 
 
 def setup():  # Communicates with the GPIO
-    global red_led, blue_led, green_led, yellow_led  # The LEDs and buttons must be global variables
+    global red_led, blue_led, green_led, yellow_led  # The LEDs and buttons have to be global variables
     global red_button, blue_button, green_button, yellow_button, halt_button
     red_led = PWMLED(23)  # Declaring the LEDs as PWMLED permits the use of the module .pulse()
     blue_led = PWMLED(25)
@@ -80,7 +80,8 @@ def playerseq():  # When the player turns a LED on, the LED's number is added to
 
 
 def check():  # Checks whether the player turned the right LEDs on or not
-    global level
+    global level  # The variables "level" and "player" have to be global
+    global player
     if player == lights:  # All the colours pulse when the player's sequence is right
         red_led.pulse()
         blue_led.pulse()
@@ -101,6 +102,7 @@ def check():  # Checks whether the player turned the right LEDs on or not
         print('Let`s try level {} again!'.format(level))
         sleep(2)
         red_led.off()
+    player = [0]  # The list player has to be reseted for the next level
 
 
 def game_loop():
