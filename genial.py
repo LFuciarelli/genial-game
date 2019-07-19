@@ -7,15 +7,15 @@ from time import sleep
 def setup():  # Communicates with the GPIO
     global red_led, blue_led, green_led, yellow_led  # The LEDs and buttons have to be global variables
     global red_button, blue_button, green_button, yellow_button, halt_button
-    red_led = PWMLED(23)  # Declaring the LEDs as PWMLED permits the use of the module .pulse()
-    blue_led = PWMLED(25)
-    green_led = PWMLED(17)
-    yellow_led = PWMLED(22)
-    red_button = Button(18, pull_up=True)
-    blue_button = Button(24, pull_up=True)
-    green_button = Button(4, pull_up=True)
-    yellow_button = Button(27, pull_up=True)
-    halt_button = Button(26, pull_up=True)
+    red_led = PWMLED(18)  # Declaring the LEDs as PWMLED permits the use of the module .pulse()
+    blue_led = PWMLED(24)
+    green_led = PWMLED(12)
+    yellow_led = PWMLED(4)
+    red_button = Button(23, pull_up=True)
+    blue_button = Button(25, pull_up=True)
+    green_button = Button(16, pull_up=True)
+    yellow_button = Button(17, pull_up=True)
+    halt_button = Button(27, pull_up=True)
 
 
 def destroy():  # Turns the LEDs off
