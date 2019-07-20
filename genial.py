@@ -1,5 +1,4 @@
-from gpiozero import Button, PWMLED
-from signal import pause
+from gpiozero import PWMLED, Button
 from random import randint
 from time import sleep
 
@@ -7,16 +6,14 @@ from time import sleep
 def setup():  # Sets up the pins of the GPIO
     global red_led, blue_led, green_led, yellow_led  # The LEDs and buttons have to be global variables
     global red_button, blue_button, green_button, yellow_button, halt_button
-
-  
     red_led = PWMLED(18)  # Declaring the LEDs as PWMLED permits the use of the module .pulse()
     blue_led = PWMLED(24)
-    green_led = PWMLED(12)
-    yellow_led = PWMLED(4)
+    green_led = PWMLED(4)
+    yellow_led = PWMLED(12)
     red_button = Button(23, pull_up=True)
     blue_button = Button(25, pull_up=True)
-    green_button = Button(16, pull_up=True)
-    yellow_button = Button(17, pull_up=True)
+    green_button = Button(17, pull_up=True)
+    yellow_button = Button(16, pull_up=True)
     halt_button = Button(27, pull_up=True)
 
 
