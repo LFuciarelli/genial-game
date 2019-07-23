@@ -21,6 +21,6 @@ Genial is a simple game written in Python and designed for Raspberry Pi. It is s
 ### GPIO Zero
 If you are using Raspbian or the Raspberry Pi Desktop, GPIO Zero is installed by default. But if you are using Raspbian Lite or other operating system, click [here](https://gpiozero.readthedocs.io/en/stable/installing.html) to install this library.
 ## How to play
-The game starts at level 1, where one of the four LEDs turns on for one second. When it turns off again, the player has to push the button of the corresponding LED and then press the halt button at the end of the breadboard. If the player replicates the sequence correctly, all the LEDs will pulse and the player will pass to the next level, in which the computer will add another LED to the sequence. Otherwise, only the red LED will pulse and the player will have to repeat the level. To exit the game, press Ctrl + C.
+The game starts at level 1, where one of the four LEDs turns on for one second. When it turns off again, the player has to push the button of the corresponding LED and then press the halt button at the end of the breadboard. If the player replicates the sequence correctly, all the LEDs will pulse and the player will pass to the next level, in which the computer will add another LED to the sequence. Otherwise, only the red LED will pulse and the player will have to repeat the level. To leave the game, press Ctrl + C.
 ## License
 This project is licensed under the MIT License - open the [LICENSE.md](https://github.com/LFuciarelli/genial-game/blob/master/LICENSE.md) file for more details
