@@ -20,7 +20,7 @@ Genial is a simple game written in Python and designed for Raspberry Pi. It is s
 ### Game
 #### Cloning the repository
 You need to have git installed on your Raspberry Pi in order to clone this repository. If you are not sure whether you have git installed or not, open the command line and type `git --version`. 
-If you already have git installed, but a newer version is available, use the command `git clone https://github.com/git/git`' to actualise it.
+If you already have git installed, but a newer version is available, use the command `git clone https://github.com/git/git`' to update it.
 But if you do not have git installed on your computer, type `sudo apt-get install git`.
 To install the game, use the command `cd` and write the directory in which you want to save the repository. If you do not know where you want to save the repository, type `pwd` and check if the output is `/home/pi`. If it is, you do not need to change the directory; you can save the repository right there. To find the file later, you will only need to open the file manager.
 To conclude, clone the repository using `git clone https://github.com/LFuciarelli/genial-game.git`.
