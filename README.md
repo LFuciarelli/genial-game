@@ -17,7 +17,9 @@ Genial is a simple game written in Python and designed for Raspberry Pi. It is s
 ### Wiring diagram
 ![](images/genialgame_bb.png)
 ## Installing
-### Repository
+### Game
+#### Cloning the repository
+#### Downloading a ZIP file
 ### GPIO Zero
 If you are using Raspbian or the Raspberry Pi Desktop, GPIO Zero is installed by default. But if you are using Raspbian Lite or other operating system, click [here](https://gpiozero.readthedocs.io/en/stable/installing.html) to install this library.
 ## How to play
