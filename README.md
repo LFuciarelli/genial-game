@@ -29,6 +29,6 @@ Now you are ready to start playing Genial!
 ### GPIO Zero
 If you are using Raspbian or the Raspberry Pi Desktop, GPIO Zero is installed by default. But if you are using Raspbian Lite or other operating system, click [here](https://gpiozero.readthedocs.io/en/stable/installing.html) to install this library.
 ## How to play
-The game starts at level 1, in which one of the four LEDs turns on for one second. When it turns off again, the green and the blue LEDs will pulse to advert the player to push the button of the corresponding LED. If the player replicates the sequence correctly, all the LEDs will pulse and the player will pass to the next level, in which the computer will add another LED to the sequence or will repeat the first LED another time. Otherwise, only the red LED will pulse and the player will have to repeat the level. To leave the game, press Ctrl + C.
+The game starts at level 1, in which one of the four LEDs turns on for one second. When it turns off again, the player has to push the button of the corresponding LED. If the player replicates the sequence correctly, all the LEDs will pulse and the player will pass to the next level, in which the computer will add another LED to the sequence or will repeat the same LED another time. Otherwise, only the red LED will pulse and the player will have to repeat the level. To leave the game, press Ctrl + C.
 ## License
 This project is licensed under the MIT License - open the [LICENSE.md](https://github.com/LFuciarelli/genial-game/blob/master/LICENSE.md) file for more details
