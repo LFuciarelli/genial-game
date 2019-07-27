@@ -16,6 +16,7 @@ Genial is a simple game written in Python and designed for Raspberry Pi. It is s
 - Push button x4 (square buttons with colourful caps are preferable but not essential)
 ### Wiring diagram
 ![](images/genialgame4_bb.png)
+If you need some help to attach the wires to your Raspberry Pi, check this [website](https://pinout.xyz/).
 ## Installing
 ### Game
 #### Cloning the repository
