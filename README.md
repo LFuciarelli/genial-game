@@ -1,3 +1,4 @@
+)![](https://img.shields.io/github/license/LFuciarelli/genial-game)
 # Genial game
 Genial, a Simon-like game for Raspberry Pi written in Python.
 ## Table of contents
